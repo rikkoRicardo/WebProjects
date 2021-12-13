@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Ficha 3</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="calculadora.css" />
+    <script src="calculadora.js"></script>
+</head>
+<body>
+<div>
+    <table align=center width="50%" border="1">
+    <tr>
+    <td  width="100%" style="">
+        <pre align="center"><strong>Functional Calculator HTML + JS</strong></pre>
+    </td>    
+    </tr>
+    <tr>
+    <td >
+            <table width="100%" border="1" style="border:black 10px">
+        <p align="center"><p><h3> Data:<form id="Data"> <input type="button" value="Actualizar" onclick="Data1()"/> <input disabled="disabled" id="D" /> </form></h3></p></p></tr> </table> 
+	
+</table>
+<br>
+       <div class="calculadora">
+        <br>
+            <form class="centrar" id="resultado" method="POST">
+                <input type="text" disabled="disabled" name="E" size="20" value="" /><br />
+                Resultado: <input disabled="disabled" type="text" name="R" size="20" value="" />
+            </form>
+            <br>
+            <table class="centrar">
+                <tbody>
+                    <tr>
+                        <td id="T0" onclick="digito('0')" onmouseover="mouseOver('T0')" onmouseout="mouseOut('T0')">0</td>
+                        <td id="T1" onclick="digito('1')" onmouseover="mouseOver('T1')" onmouseout="mouseOut('T1')">1</td>
+                        <td id="T2" onclick="digito('2')" onmouseover="mouseOver('T2')" onmouseout="mouseOut('T2')">2</td>
+                        <td id="T3" onclick="digito('3')" onmouseover="mouseOver('T3')" onmouseout="mouseOut('T3')">3</td>
+                    </tr>
+                    <tr>
+                        <td id="T4" onclick="digito('4')" onmouseover="mouseOver('T4')" onmouseout="mouseOut('T4')">4</td>
+                        <td id="T5" onclick="digito('5')" onmouseover="mouseOver('T5')" onmouseout="mouseOut('T5')">5</td>
+                        <td id="T6" onclick="digito('6')" onmouseover="mouseOver('T6')" onmouseout="mouseOut('T6')">6</td>
+                        <td id="T7" onclick="digito('7')" onmouseover="mouseOver('T7')" onmouseout="mouseOut('T7')">7</td>
+                    </tr>
+                    <tr>
+                        <td id="T8" onclick="digito('8')" onmouseover="mouseOver('T8')" onmouseout="mouseOut('T8')">8</td>
+                        <td id="T9" onclick="digito('9')" onmouseover="mouseOver('T9')" onmouseout="mouseOut('T9')">9</td>
+                        <td id="TC" onclick="clean()" onmouseover="mouseOver('TC')" onmouseout="mouseOut('TC')">C</td>
+                        <td id="TIGUAL" onclick="calculate()" onmouseover="mouseOver('TIGUAL')" onmouseout="mouseOut('TIGUAL')">=</td>
+                    </tr>
+                    <tr>
+                        <td id="TMAIS" onclick="digito('+')" onmouseover="mouseOver('TMAIS')" onmouseout="mouseOut('TMAIS')">+</td>
+                        <td id="TMENOS" onclick="digito('-')" onmouseover="mouseOver('TMENOS')" onmouseout="mouseOut('TMENOS')">-</td>
+                        <td id="TVEZES" onclick="digito('*')" onmouseover="mouseOver('TVEZES')" onmouseout="mouseOut('TVEZES')">*</td>
+                        <td id="TDIV" onclick="digito('/')" onmouseover="mouseOver('TDIV')" onmouseout="mouseOut('TDIV')">/</td>
+                    </tr>
+                </tbody>
+        </div>	
+</div>
+ 
+
+
+</body>
+</html>
